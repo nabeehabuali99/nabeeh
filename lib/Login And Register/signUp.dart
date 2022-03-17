@@ -7,8 +7,8 @@ class SignupPage extends StatefulWidget {
   _SignupPageState createState() => _SignupPageState();
 }
 class _SignupPageState extends State<SignupPage> with SingleTickerProviderStateMixin{
-  Animation? animation, delayedAnimation, muchDelayedAnimation;
-  AnimationController? animationController;
+  late Animation animation, delayedAnimation, muchDelayedAnimation;
+  late AnimationController animationController;
   @override
   void initState() {
     // TODO: implement initState
@@ -17,21 +17,21 @@ class _SignupPageState extends State<SignupPage> with SingleTickerProviderStateM
         AnimationController(duration: const Duration(seconds: 3), vsync: this);
     animation = Tween(begin: -1.0, end: 0.0).animate(
       CurvedAnimation(
-          curve: Curves.fastOutSlowIn, parent: animationController!),
+          curve: Curves.fastOutSlowIn, parent: animationController),
     );
-    animation = Tween(begin: -1.0, end: 0.0).animate(
+    delayedAnimation = Tween(begin: -1.0, end: 0.0).animate(
       CurvedAnimation(
           curve:const Interval(0.5,1.0,curve: Curves.fastOutSlowIn),
-          parent: animationController!),
+          parent: animationController),
     );
 
   }
   @override
   Widget build(BuildContext context) {
     final double width =MediaQuery.of(context).size.width;
-    animationController?.forward();
+    animationController.forward();
     return AnimatedBuilder(
-        animation: animationController!,
+        animation: animationController,
         builder: (BuildContext context, Widget? child) {
           return Scaffold(
           resizeToAvoidBottomInset: false,
@@ -39,7 +39,7 @@ class _SignupPageState extends State<SignupPage> with SingleTickerProviderStateM
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Transform(
-                transform: Matrix4.translationValues(animation?.value * width,  0.0, 0.0),
+                transform: Matrix4.translationValues(animation.value * width,  0.0, 0.0),
 
                 child: Container(
                   child: Stack(
@@ -66,7 +66,7 @@ class _SignupPageState extends State<SignupPage> with SingleTickerProviderStateM
                 ),
               ),
               Transform(
-                transform: Matrix4.translationValues(delayedAnimation?.value * width,  0.0, 0.0),
+                transform: Matrix4.translationValues(delayedAnimation.value * width,  0.0, 0.0),
                 child: Container(
                     padding:
                     const EdgeInsets.only(top: 35.0, left: 20.0, right: 20.0),

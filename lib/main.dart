@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
+import 'Home Page/Cards.dart';
 import 'Home Page/Home Chat.dart';
+ import 'Home Page/users profile/profiles.dart';
 import 'Login And Register/SignIn.dart';
 import 'Login And Register/signUp.dart';
 
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/signup': (BuildContext context) =>  const SignupPage()
       },
-      home: const SignIn(),    //    SignIn()  ||   MyHomePage()
+      home:   CardsUI(),    //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI()
     );
   }
 }

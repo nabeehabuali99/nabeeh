@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:animations/animations.dart';
+
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
 
@@ -8,8 +9,8 @@ class SignIn extends StatefulWidget {
 }
 
 class _SignInState extends State<SignIn> with SingleTickerProviderStateMixin {
-  Animation? animation, delayedAnimation, muchDelayedAnimation;
-  AnimationController? animationController;
+  late Animation animation, delayedAnimation, muchDelayedAnimation;
+  late AnimationController animationController;
 
   @override
   void initState() {
@@ -17,28 +18,29 @@ class _SignInState extends State<SignIn> with SingleTickerProviderStateMixin {
     super.initState();
     animationController =
         AnimationController(duration: const Duration(seconds: 3), vsync: this);
+
     animation = Tween(begin: -1.0, end: 0.0).animate(
       CurvedAnimation(
-          curve: Curves.fastOutSlowIn, parent: animationController!),
+          curve: Curves.fastOutSlowIn, parent: animationController),
     );
-    animation = Tween(begin: -1.0, end: 0.0).animate(
+    delayedAnimation = Tween(begin: -1.0, end: 0.0).animate(
       CurvedAnimation(
-          curve:const Interval(0.8,1.0,curve: Curves.fastOutSlowIn),
-           parent: animationController!),
+          curve: const Interval(0.8, 1.0, curve: Curves.fastOutSlowIn),
+          parent: animationController),
     );
-    animation = Tween(begin: -1.0, end: 0.0).animate(
+    muchDelayedAnimation = Tween(begin: -1.0, end: 0.0).animate(
       CurvedAnimation(
-          curve:const Interval(0.5,1.0,curve: Curves.fastOutSlowIn),
-          parent: animationController!),
+          curve: const Interval(0.5, 1.0, curve: Curves.fastOutSlowIn),
+          parent: animationController),
     );
   }
 
   @override
   Widget build(BuildContext context) {
-    final double width =MediaQuery.of(context).size.width;
-    animationController?.forward();
+    final double width = MediaQuery.of(context).size.width;
+    animationController.forward();
     return AnimatedBuilder(
-      animation: animationController!,
+      animation: animationController,
       builder: (BuildContext context, Widget? child) {
         return Scaffold(
           resizeToAvoidBottomInset: false,
@@ -46,24 +48,28 @@ class _SignInState extends State<SignIn> with SingleTickerProviderStateMixin {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Transform(
-                transform: Matrix4.translationValues(animation?.value * width,  0.0, 0.0),
+                transform: Matrix4.translationValues(
+                    animation.value * width, 0.0, 0.0),
                 child: Container(
                   child: Stack(
                     children: <Widget>[
                       Container(
-                        padding: const EdgeInsets.fromLTRB(15.0, 110.0, 0.0, 0.0),
+                        padding:
+                            const EdgeInsets.fromLTRB(15.0, 110.0, 0.0, 0.0),
                         child: const Text('Hello',
-                            style:
-                            TextStyle(fontSize: 80.0, fontWeight: FontWeight.bold)),
+                            style: TextStyle(
+                                fontSize: 80.0, fontWeight: FontWeight.bold)),
                       ),
                       Container(
-                        padding: const EdgeInsets.fromLTRB(16.0, 175.0, 0.0, 0.0),
+                        padding:
+                            const EdgeInsets.fromLTRB(16.0, 175.0, 0.0, 0.0),
                         child: const Text('There',
-                            style:
-                            TextStyle(fontSize: 80.0, fontWeight: FontWeight.bold)),
+                            style: TextStyle(
+                                fontSize: 80.0, fontWeight: FontWeight.bold)),
                       ),
                       Container(
-                        padding: const EdgeInsets.fromLTRB(220.0, 175.0, 0.0, 0.0),
+                        padding:
+                            const EdgeInsets.fromLTRB(220.0, 175.0, 0.0, 0.0),
                         child: const Text('.',
                             style: TextStyle(
                                 fontSize: 80.0,
@@ -75,10 +81,11 @@ class _SignInState extends State<SignIn> with SingleTickerProviderStateMixin {
                 ),
               ),
               Transform(
-                transform: Matrix4.translationValues(delayedAnimation?.value * width,  0.0, 0.0),
+                transform: Matrix4.translationValues(
+                    delayedAnimation.value * width, 0.0, 0.0),
                 child: Container(
-                    padding:
-                    const EdgeInsets.only(top: 35.0, left: 20.0, right: 20.0),
+                    padding: const EdgeInsets.only(
+                        top: 35.0, left: 20.0, right: 20.0),
                     child: Column(
                       children: <Widget>[
                         const TextField(
@@ -160,7 +167,8 @@ class _SignInState extends State<SignIn> with SingleTickerProviderStateMixin {
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: const <Widget>[
                                 Center(
-                                  child: ImageIcon(AssetImage('assets/Facebook.png')),
+                                  child: ImageIcon(
+                                      AssetImage('assets/Facebook.png')),
                                 ),
                                 SizedBox(width: 10.0),
                                 Center(
@@ -178,7 +186,8 @@ class _SignInState extends State<SignIn> with SingleTickerProviderStateMixin {
               ),
               const SizedBox(height: 15.0),
               Transform(
-                transform: Matrix4.translationValues(muchDelayedAnimation?.value * width,  0.0, 0.0),
+                transform: Matrix4.translationValues(
+                    muchDelayedAnimation.value * width, 0.0, 0.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
@@ -207,9 +216,6 @@ class _SignInState extends State<SignIn> with SingleTickerProviderStateMixin {
           ),
         );
       },
-
     );
-
   }
 }
-
