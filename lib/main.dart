@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'Home Page/Cards.dart';
+import 'Home Page/Carousel Page.dart';
 import 'Home Page/Home Chat.dart';
  import 'Home Page/users profile/profiles.dart';
 import 'Login And Register/SignIn.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/signup': (BuildContext context) =>  const SignupPage()
       },
-      home:   CardsUI(),    //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI()
+      home:  CarouselPage(),    //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI()
     );
   }
 }

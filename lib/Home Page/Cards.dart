@@ -18,7 +18,7 @@ class _CardsUIState extends State<CardsUI>
     controller =
         AnimationController(duration: const Duration(seconds:2), vsync: this);
 
-    cardAnimation = Tween(begin: 0.0, end: -0.025).animate(
+    cardAnimation = Tween(begin: 0.0, end : -0.025).animate(
         CurvedAnimation(curve: Curves.fastOutSlowIn, parent: controller));
 
     delayedCardAnimation = Tween(begin: 0.0, end: -0.05).animate(

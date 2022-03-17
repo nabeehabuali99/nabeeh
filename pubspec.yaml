@@ -68,6 +68,10 @@ flutter:
     - assets/Girl Img.png
     - assets/Chat Img.png
     - assets/Chat.png
+    - assets/Burger 2.png
+    - assets/Burger3.png
+    - assets/Burger 1.png
+    - assets/Burger 4.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
