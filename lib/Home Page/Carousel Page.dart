@@ -7,16 +7,36 @@ class CarouselPage extends StatefulWidget {
   _CarouselPageState createState() => _CarouselPageState();
 }
 
-class _CarouselPageState extends State<CarouselPage> {
+class _CarouselPageState extends State<CarouselPage> with SingleTickerProviderStateMixin{
   int photoIndex = 0;
-
+late AnimationController animationController;
+late Animation carouselAnimation ;
   List<String> photos = [
     'assets/Burger3.png',
     'assets/Burger 1.png',
     'assets/Burger3.png',
     'assets/Burger 4.png'
   ];
+@override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    animationController = AnimationController(duration: const Duration(seconds: 60),vsync: this );
+    carouselAnimation =IntTween(begin: 0,end: photos.length -1).animate(animationController)..addListener(() {
+      setState(() {
+        photoIndex = carouselAnimation.value;
+      });
+    });
+animationController.repeat();
+  }
 
+
+    @override
+  void dispose() {
+    // TODO: implement dispose
+    super.dispose();
+    animationController.dispose();
+  }
   void _previousImage() {
     setState(() {
       photoIndex = photoIndex > 0 ? photoIndex - 1 : 0;
@@ -61,22 +81,22 @@ class _CarouselPageState extends State<CarouselPage> {
                       )
                     ],
                   ),
-                  GestureDetector(
-                    child: Container(
-                      height: 210.0,
-                      width: MediaQuery.of(context).size.width,
-                      color: Colors.transparent,
-                    ),
-                    onTap: _nextImage,
-                  ),
-                  GestureDetector(
-                    child: Container(
-                      height: 210.0,
-                      width: MediaQuery.of(context).size.width / 2,
-                      color: Colors.transparent,
-                    ),
-                    onTap: _previousImage,
-                  ),
+                  // GestureDetector(
+                  //   child: Container(
+                  //     height: 210.0,
+                  //     width: MediaQuery.of(context).size.width,
+                  //     color: Colors.transparent,
+                  //   ),
+                  //   onTap: _nextImage,
+                  // ),
+                  // GestureDetector(
+                  //   child: Container(
+                  //     height: 210.0,
+                  //     width: MediaQuery.of(context).size.width / 2,
+                  //     color: Colors.transparent,
+                  //   ),
+                  //   onTap: _previousImage,
+                  // ),
                   Positioned(
                     top: 180.0,
                     left: 5.0,
@@ -148,9 +168,9 @@ class _CarouselPageState extends State<CarouselPage> {
                               fontFamily: 'Montserrat',
                               fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(width: 5.0),
-                        Icon(Icons.location_on),
-                        SizedBox(width: 5.0),
+                        const SizedBox(width: 5.0),
+                        const Icon(Icons.location_on),
+                        const SizedBox(width: 5.0),
                         Text(
                           '400ft Away',
                           style: TextStyle(
@@ -274,7 +294,7 @@ class SelectedPhoto extends StatelessWidget {
   final int numberOfDots;
   final int photoIndex;
 
-  SelectedPhoto({required this.numberOfDots, required this.photoIndex});
+    SelectedPhoto({required this.numberOfDots, required this.photoIndex});
 
   Widget _inactivePhoto() {
     return Container(
