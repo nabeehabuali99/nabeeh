@@ -33,7 +33,7 @@ class _ProfilePageState extends State<ProfilePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Hero(
-                tag: 'assets/chris.png',
+                tag: 'assets/s.png',
                 child: Container(
                   height: 125.0,
                   width: 125.0,
@@ -41,7 +41,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       borderRadius: BorderRadius.circular(62.5),
                       image: const DecorationImage(
                           fit: BoxFit.cover,
-                          image: AssetImage('assets/chris.png'))),
+                          image: AssetImage('assets/s.png'))),
                 ),
 
               ),

@@ -12,13 +12,15 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Image.asset('assets/img.png',
+        title: Image.asset('assets/anotherchair.png',
             color: Colors.green, height: 20, width: 20),
         elevation: 0.0,
         centerTitle: true,
         backgroundColor: Colors.white,
         leading: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
             icon: const Icon(Icons.arrow_back),
             color: Colors.grey),
         actions: <Widget>[

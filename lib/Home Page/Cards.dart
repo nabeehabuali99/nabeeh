@@ -49,7 +49,7 @@ class _CardsUIState extends State<CardsUI>
               leading: IconButton(
                 icon: const Icon(Icons.arrow_back_ios),
                 color: Colors.black,
-                onPressed: () {},
+                onPressed: () {  Navigator.of(context).pop();},
               ),
               title:   const Text('Near by',
                   style: TextStyle(
@@ -174,7 +174,7 @@ class _CardsUIState extends State<CardsUI>
                     children: <Widget>[
                       FloatingActionButton(
                         elevation: 0.0,
-                        onPressed: () {},
+                        onPressed: () {  Navigator.of(context).pop();},
                         child: const Icon(Icons.close, color: Colors.black),
                         backgroundColor: Colors.white,
                       ),

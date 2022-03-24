@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:animations/animations.dart';
-class SignupPage extends StatefulWidget {
+ class SignupPage extends StatefulWidget {
   const SignupPage({Key? key}) : super(key: key);
 
   @override

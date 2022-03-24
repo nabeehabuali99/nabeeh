@@ -60,14 +60,14 @@ class _TravelHomeState extends State<TravelHome>
                 const SizedBox(width: 5.0),
                 InkWell(
                   child: Hero(
-                    tag: 'assets/chris.png',
+                    tag: 'assets/s.png',
                     child: Container(
                       height: 50.0,
                       width: 50.0,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(25.0),
                           image: const DecorationImage(
-                              image: AssetImage('assets/chris.png'))),
+                              image: AssetImage('assets/s.png'))),
                     ),
                   ),
                   onTap: (){

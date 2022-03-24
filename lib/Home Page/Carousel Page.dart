@@ -81,22 +81,22 @@ animationController.repeat();
                       )
                     ],
                   ),
-                  // GestureDetector(
-                  //   child: Container(
-                  //     height: 210.0,
-                  //     width: MediaQuery.of(context).size.width,
-                  //     color: Colors.transparent,
-                  //   ),
-                  //   onTap: _nextImage,
-                  // ),
-                  // GestureDetector(
-                  //   child: Container(
-                  //     height: 210.0,
-                  //     width: MediaQuery.of(context).size.width / 2,
-                  //     color: Colors.transparent,
-                  //   ),
-                  //   onTap: _previousImage,
-                  // ),
+                  GestureDetector(
+                    child: Container(
+                      height: 210.0,
+                      width: MediaQuery.of(context).size.width,
+                      color: Colors.transparent,
+                    ),
+                    onTap: _nextImage,
+                  ),
+                  GestureDetector(
+                    child: Container(
+                      height: 210.0,
+                      width: MediaQuery.of(context).size.width / 2,
+                      color: Colors.transparent,
+                    ),
+                    onTap: _previousImage,
+                  ),
                   Positioned(
                     top: 180.0,
                     left: 5.0,
@@ -312,7 +312,7 @@ class SelectedPhoto extends StatelessWidget {
   Widget _activePhoto() {
     return Container(
       child: Padding(
-        padding: EdgeInsets.only(left: 3.0, right: 3.0),
+        padding: const EdgeInsets.only(left: 3.0, right: 3.0),
         child: Container(
           height: 10.0,
           width: 10.0,

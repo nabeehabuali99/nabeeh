@@ -12,11 +12,13 @@ class _CakeCatalogePageState extends State<CakeCataloge> {
         appBar: AppBar(
           elevation: 0.0,
           backgroundColor: Colors.transparent,
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back_ios),
-            onPressed: () {},
-            color: Colors.black,
-          ),
+            leading: IconButton(
+              icon: const Icon(Icons.arrow_back_ios),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              color: Colors.black,
+            ),
           title:
               const Text('Fine quality', style: TextStyle(color: Colors.black)),
           centerTitle: true,

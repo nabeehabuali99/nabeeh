@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:test_app_nabeeh/Constants/Routes.dart' as route;
 
 
 class UsersProfile extends StatefulWidget {
@@ -8,10 +9,20 @@ class UsersProfile extends StatefulWidget {
   _UsersProfileState createState() =>   _UsersProfileState();
 }
 
+String name ='Tom Cruise';
 class _UsersProfileState extends State<UsersProfile> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back_ios),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+          color: Colors.black,
+        ),
+      ),
         body: Stack(
           children: <Widget>[
             ClipPath(
@@ -29,17 +40,17 @@ class _UsersProfileState extends State<UsersProfile> {
                         decoration: const BoxDecoration(
                             color: Colors.red,
                             image: DecorationImage(
-                                image: NetworkImage(
-                                    'https://pixel.nymag.com/imgs/daily/vulture/2017/06/14/14-tom-cruise.w700.h700.jpg'),
+                                image: AssetImage(
+                                    'assets/chris.png'),
                                 fit: BoxFit.cover),
                             borderRadius: BorderRadius.all(Radius.circular(75.0)),
                             boxShadow: [
                               BoxShadow(blurRadius: 7.0, color: Colors.black)
                             ])),
                     const SizedBox(height: 90.0),
-                    const   Text(
-                      'Tom Cruise',
-                      style: TextStyle(
+                        Text(
+                      name,
+                      style: const TextStyle(
                           fontSize: 30.0,
                           fontWeight: FontWeight.bold,
                           fontFamily: 'Montserrat'),
@@ -81,7 +92,9 @@ class _UsersProfileState extends State<UsersProfile> {
                           color: Colors.red,
                           elevation: 7.0,
                           child: GestureDetector(
-                            onTap: () {},
+                            onTap: () {
+                              Navigator.of(context).pushNamed(route.logout);
+                            },
                             child: const Center(
                               child: Text(
                                 'Log out',
