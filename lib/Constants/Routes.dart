@@ -3,6 +3,7 @@ import 'package:test_app_nabeeh/Home%20Page/Food/Cake%20Cataloge.dart';
 
 import '../Clean Design/Chef Profile/chef design.dart';
 import '../Clean Design/Fashion Design.dart';
+import '../Clean Design/Gourmet Takeaway app/Home Gourmet.dart';
 import '../Furniture App/Cart App.dart';
 import '../Furniture App/HomeScreen.dart';
 import '../Furniture App/ShowItems.dart';
@@ -29,6 +30,7 @@ const String cartFurniture = 'CartFurniture';
 const String fashionDesign = 'FashionDesign';
 const String cakeCataloge = 'CakeCataloge';
 const String chefDesign = 'ChefDesign';
+const String homeGourmet = 'HomeGourmet';
 
 
 Route<dynamic> controller(RouteSettings settings) {
@@ -60,8 +62,9 @@ Route<dynamic> controller(RouteSettings settings) {
     case cakeCataloge:
       return MaterialPageRoute(builder: (context) => CakeCataloge());
     case chefDesign:
-      return MaterialPageRoute(builder: (context) => ChefDesign());
-
+      return MaterialPageRoute(builder: (context) => const ChefDesign());
+    case homeGourmet:
+      return MaterialPageRoute(builder: (context) => const HomeGourmet());
 
     default:
       throw ("This Rout does not exists");

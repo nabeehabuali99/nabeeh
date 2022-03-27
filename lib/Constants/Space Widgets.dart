@@ -4,7 +4,7 @@ import 'Size_Config.dart';
 
 class HorizintalSpace extends StatelessWidget {
 
-    const HorizintalSpace(this.value);
+      const HorizintalSpace(this.value, {Key? key}) : super(key: key);
   final double? value;
 
 @override
@@ -15,7 +15,7 @@ class HorizintalSpace extends StatelessWidget {
 
 class VerticalSpace extends StatelessWidget {
 
-  const VerticalSpace(this.value);
+      VerticalSpace(this.value, {Key? key}) : super(key: key);
   final double? value;
 
   @override
