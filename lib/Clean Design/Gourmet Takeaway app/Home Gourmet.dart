@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/Colors.dart';
 import 'package:test_app_nabeeh/Constants/My%20Icons.dart';
 import 'package:test_app_nabeeh/Constants/Size_Config.dart';
+import 'package:test_app_nabeeh/Constants/Space%20Widgets.dart';
 
 import 'GuessYouLikePage.dart';
 
 class HomeGourmet extends StatefulWidget {
   const HomeGourmet({Key? key}) : super(key: key);
-
   @override
   _HomeGourmetState createState() => _HomeGourmetState();
 }
@@ -20,10 +20,12 @@ class _HomeGourmetState extends State<HomeGourmet>
   void initState() {
     super.initState();
     tabController = TabController(vsync: this, length: 3);
+
   }
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Scaffold(
       body: ListView(
         children: <Widget>[
@@ -61,7 +63,8 @@ class _HomeGourmetState extends State<HomeGourmet>
                               image: AssetImage('assets/orangemodel.png'),
                               fit: BoxFit.cover)),
                     ),
-                    const SizedBox(width: 15.0),
+                    //const SizedBox(width: 15.0),
+                    const HorizintalSpace(2),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: <Widget>[
