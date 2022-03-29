@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/Routes.dart' as route;
+import 'Car Service App/CurrentVehicle.dart';
+import 'Clean Design/Fashion Store/StoreHomeFashion.dart';
 import 'Clean Design/Hairstylist App/homeHiarStyle.dart';
 import 'Constants/Size_Config.dart';
 import 'Currency App/CurrencyView.dart';
@@ -16,8 +18,8 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: route.controller,
-      home: HomeFruits (), //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI() || TravelHome() ||FoodRecipesPage() ||CakeCataloge() || HomeScreen ||ProfileApp ||HomeScreenClean()
+      home: FashionStore(), //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI() || TravelHome() ||FoodRecipesPage() ||CakeCataloge() || HomeScreen ||ProfileApp ||HomeScreenClean()
     );
   }
 }
-//ChefDesign() // HomeHairStyle() //HomeFruits() //CurrencyView
+//ChefDesign() // HomeHairStyle() //HomeFruits() //CurrencyView() //CurrentCar()//FashionStore()

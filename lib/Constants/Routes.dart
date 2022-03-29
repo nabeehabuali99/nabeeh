@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Home%20Page/Food/Cake%20Cataloge.dart';
 
+import '../Car Service App/Check Vehicle Availability.dart';
+import '../Car Service App/CurrentVehicle.dart';
 import '../Clean Design/Chef Profile/chef design.dart';
 import '../Clean Design/Fashion Design.dart';
+import '../Clean Design/Fashion Store/detailsFashion.dart';
 import '../Clean Design/Gourmet Takeaway app/Home Gourmet.dart';
+import '../Fruits Design/User Profile Fruits.dart';
 import '../Furniture App/Cart App.dart';
 import '../Furniture App/HomeScreen.dart';
 import '../Furniture App/ShowItems.dart';
@@ -31,7 +35,10 @@ const String fashionDesign = 'FashionDesign';
 const String cakeCataloge = 'CakeCataloge';
 const String chefDesign = 'ChefDesign';
 const String homeGourmet = 'HomeGourmet';
-
+const String userProfileFruit = 'UserProfileFruit';
+const String checkAvailability = 'CheckAvailability';
+const String detailInfo = 'DetailInfo';
+const String currentCar = 'CurrentCar';
 
 Route<dynamic> controller(RouteSettings settings) {
   switch (settings.name) {
@@ -65,43 +72,20 @@ Route<dynamic> controller(RouteSettings settings) {
       return MaterialPageRoute(builder: (context) => const ChefDesign());
     case homeGourmet:
       return MaterialPageRoute(builder: (context) => const HomeGourmet());
+    case userProfileFruit:
+      return MaterialPageRoute(builder: (context) => const UserProfileFruit());
+    case checkAvailability:
 
+      return MaterialPageRoute(builder: (context) => const CheckAvailability());
+      case detailInfo:
+
+      return MaterialPageRoute(builder: (context) => const DetailInfo());
+      case currentCar:
+      return MaterialPageRoute(builder: (context) => const CurrentCar());
     default:
       throw ("This Rout does not exists");
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // class Routes extends StatefulWidget {
 //   const Routes({Key? key}) : super(key: key);

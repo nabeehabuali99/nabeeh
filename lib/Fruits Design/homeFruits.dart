@@ -51,7 +51,7 @@ class _HomeFruitsPageState extends State<HomeFruits>
                             fit: BoxFit.cover)),
                   ),
                   onTap: () {
-                    Navigator.of(context).pushNamed(route.profile);
+                    Navigator.of(context).pushNamed(route.userProfileFruit);
                   },
                 ),
                 IconButton(

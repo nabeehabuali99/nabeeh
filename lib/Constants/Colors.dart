@@ -12,6 +12,10 @@ class Color_Const {
   static Color llightpinkCurr =   const Color(0xFFF1ABAB) ;
   static Color  red2Curr =   const   Color(0xFFB73434) ;
   static Color  cheakredCurr =   const  Color(0xFFFC1514) ;
+  static Color  darkblue =   const  Color(0xFF434C68) ;
+  static Color  lightyellow =   const  Color(0xFFEEB139);
+  static Color  lightlightyellow =   const  Color(0xFFFBC044);
+  static Color darkyellow =   const  Color(0xFFD8992B);
   static Color grey = Colors.grey;
 
   static Color red = Colors.red;

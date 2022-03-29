@@ -61,8 +61,8 @@ class _DashboardPageState extends State<DashboardPage> {
                           fontFamily: 'Quicksand'),
                     )),
                 const SizedBox(height: 20.0),
-                   Expanded(
-                     child: InkWell(
+                Expanded(
+                  child: InkWell(
                       onTap: () {
                         Navigator.of(context).pushReplacement(
                           MaterialPageRoute(
@@ -79,7 +79,7 @@ class _DashboardPageState extends State<DashboardPage> {
                             fontSize: 40.0,
                             fontFamily: 'Quicksand'),
                       )),
-                   ),
+                ),
                 Text(
                   widget.currencyone,
                   style: TextStyle(
