@@ -15,7 +15,7 @@ class HorizintalSpace extends StatelessWidget {
 
 class VerticalSpace extends StatelessWidget {
 
-      VerticalSpace(this.value, {Key? key}) : super(key: key);
+  const VerticalSpace(this.value, {Key? key}) : super(key: key);
   final double? value;
 
   @override

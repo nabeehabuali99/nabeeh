@@ -36,4 +36,8 @@ class MyIcons {
   static const IconData search = Icons.search;
   static const IconData close = Icons.close;
   static const IconData shoppingbasket =Icons.shopping_basket;
+  static const IconData help_outline =Icons.help_outline;
+  static const IconData hot_tub =Icons.hot_tub;
+  static const IconData branding_watermark =Icons.branding_watermark;
+  static const IconData wb_sunny =Icons.wb_sunny;
 }

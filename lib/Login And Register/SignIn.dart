@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:animations/animations.dart';
 import 'package:test_app_nabeeh/Constants/Routes.dart' as route;
 
 class SignIn extends StatefulWidget {
@@ -101,7 +100,7 @@ class _SignInState extends State<SignIn> with SingleTickerProviderStateMixin {
                             ),
                           ),
                         ),
-                        const SizedBox(height: 20.0),
+
                         const TextField(
                           decoration: InputDecoration(
                             labelText: 'PASSWORD',

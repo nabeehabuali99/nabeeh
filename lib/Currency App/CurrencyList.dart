@@ -2,10 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/Colors.dart';
 import 'package:test_app_nabeeh/Constants/My%20Icons.dart';
-
 import 'dashboard.dart';
 
 class CurrencyList extends StatefulWidget {
+  const CurrencyList({Key? key}) : super(key: key);
+
   @override
   _CurrencyListState createState() => _CurrencyListState();
 }

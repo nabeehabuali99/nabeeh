@@ -6,6 +6,8 @@ import 'Clean Design/Hairstylist App/homeHiarStyle.dart';
 import 'Constants/Size_Config.dart';
 import 'Currency App/CurrencyView.dart';
 import 'Fruits Design/homeFruits.dart';
+import 'Plants Design/homePlants.dart';
+import 'Scroll Effects/Scrolling.dart';
 
 void main() => runApp(const MyApp());
 
@@ -18,8 +20,10 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: route.controller,
-      home: FashionStore(), //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI() || TravelHome() ||FoodRecipesPage() ||CakeCataloge() || HomeScreen ||ProfileApp ||HomeScreenClean()
+      home: ScrollEffects(), //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI() || TravelHome() ||FoodRecipesPage() ||CakeCataloge() || HomeScreen ||ProfileApp ||HomeScreenClean()
     );
   }
 }
+//HomePlants
 //ChefDesign() // HomeHairStyle() //HomeFruits() //CurrencyView() //CurrentCar()//FashionStore()
+//ScrollEffects
