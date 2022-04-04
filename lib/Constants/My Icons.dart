@@ -10,6 +10,7 @@ class MyIcons {
   static const IconData cardTravel = Icons.card_travel;
   static const IconData playButton = Icons.play_arrow;
   static const IconData navigation = Icons.navigation;
+  static const IconData edit = Icons.edit;
 
   static const IconData Location = Icons.location_on;
   static const IconData networkcCell = Icons.network_cell;
@@ -18,6 +19,7 @@ class MyIcons {
   static const IconData fastfood = Icons.fastfood;
 
   static const IconData star = Icons.star;
+  static const IconData add = Icons.add;
 
   static const IconData timers = Icons.timer;
 
@@ -40,4 +42,6 @@ class MyIcons {
   static const IconData hot_tub =Icons.hot_tub;
   static const IconData branding_watermark =Icons.branding_watermark;
   static const IconData wb_sunny =Icons.wb_sunny;
+  static const IconData play_Circle_outline =Icons.play_circle_outline;
+  static const IconData account_box =Icons.account_box;
 }

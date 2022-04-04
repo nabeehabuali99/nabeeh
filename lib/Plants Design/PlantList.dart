@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:test_app_nabeeh/Constants/Size_Config.dart';
 import 'package:test_app_nabeeh/Constants/Space%20Widgets.dart';
 
 import '../Constants/Colors.dart';
+import '../Constants/FontSizeConstants.dart';
 import '../Constants/Shared Widgets/Text Widget.dart';
 import 'PlantDetail.dart';
 import 'Widgets/getPlantCard.dart';
@@ -44,6 +46,7 @@ class _PlantListState extends State<PlantList> {
   }
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return ListView(
       children: <Widget>[
         Container(
@@ -68,7 +71,7 @@ class _PlantListState extends State<PlantList> {
         Padding(
           padding: const EdgeInsets.only(left: 25.0, top: 10.0),
           child: textWidget('Description', 'Montserrat', Color_Const.black,
-              17.0, FontWeight.w500),
+              FontSizeConstants.fontsize15, FontWeight.w500),
         ),
         Padding(
           padding: const EdgeInsets.only(left: 25.0, top: 10.0),

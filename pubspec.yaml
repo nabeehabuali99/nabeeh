@@ -91,13 +91,13 @@ flutter:
   fonts:
     - family: Montserrat
       fonts:
-        - asset: assets/fonts/Montserrat-Regular.ttf.url
-        - asset: assets/fonts/Montserrat-Bold.ttf.url
-  #          weight: 700
-  #   - family: Trajan Pro
+        - asset: assets/fonts/Montserrat-SemiBold.ttf
+          style: italic
     - family: Quicksand
       fonts:
-        - asset: assets/fonts/Quicksand-Regular.ttf
+        - asset: assets/fonts/Quicksand-Bold.ttf
+        - asset: assets/fonts/Quicksand-Medium.ttf
+          weight: 700
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

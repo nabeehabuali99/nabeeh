@@ -18,7 +18,14 @@ class Color_Const {
   static Color darkyellow =   const  Color(0xFFD8992B);
     static Color darkgreen =   const  Color(0xFF399D63);
   static Color lightgreen =   const  Color(0xFF8AC7A4);
+  static Color lightPink =   const  Color(0xFFFE8A7E);
+  static Color  lPink =   const   Color(0xFFF75A4C);
+  static Color  darkkred =   const   Color(0xFF440206);
+  static Color  lbrown =   const   Color(0xFF563734);
   static Color grey = Colors.grey;
+  static Color darkWhite = Color(0xFFB6BDC7);
+  static Color darkBlue =  Color(0xFF1D3062);
+  static Color ddarkBlue =  Color(0xFF33426F);
 
   static Color red = Colors.red;
 
