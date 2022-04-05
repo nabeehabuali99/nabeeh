@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/Colors.dart';
 import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Text%20Widget.dart';
-
+import 'package:test_app_nabeeh/Restaurant%20Reviews/Widget/TabBarWidget.dart';
 import '../Constants/FontFamilyConstants.dart';
 import '../Constants/FontSizeConstants.dart';
+import '../Constants/My Icons.dart';
 import '../Constants/PathImageConstants.dart';
 import '../Constants/Size_Config.dart';
 import '../Constants/Space Widgets.dart';
 import '../Constants/StringsAllProject.dart';
+import 'Restaurant List.dart';
+import 'Widget/ColumnWidget.dart';
 
 class RestaurantProfile extends StatefulWidget {
   const RestaurantProfile({Key? key}) : super(key: key);
@@ -51,23 +54,6 @@ class _RestaurantProfileState extends State<RestaurantProfile>
                   ),
                 ),
               ),
-              Positioned(
-                left: SizeConfig.defaultSize! * 23.0,
-                top: SizeConfig.defaultSize! * 7.5,
-                child: Container(
-                  height: SizeConfig.defaultSize! * 2.5,
-                  width: SizeConfig.defaultSize! * 2.5,
-                  decoration: BoxDecoration(
-                      borderRadius:
-                          BorderRadius.circular(SizeConfig.defaultSize! * 1.2),
-                      color: Color_Const.white),
-                  child: Icon(
-                    Icons.fastfood,
-                    color: Color_Const.red,
-                    size: SizeConfig.defaultSize! *1.5,
-                  ),
-                ),
-              )
             ],
           ),
           Column(
@@ -84,7 +70,7 @@ class _RestaurantProfileState extends State<RestaurantProfile>
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   Icon(
-                    Icons.location_on,
+                    MyIcons.Location,
                     color: Color_Const.grey,
                   ),
                   textWidget(
@@ -100,93 +86,36 @@ class _RestaurantProfileState extends State<RestaurantProfile>
           const VerticalSpace(1.5),
           Container(
             height: SizeConfig.defaultSize! * 10,
-            width: double.infinity,
+            width: SizeConfig.screenWidth,
             color: Colors.grey.withOpacity(0.05),
-            padding: EdgeInsets.only(top: SizeConfig.defaultSize! * 3.1),
+            padding: EdgeInsets.only(
+                top: SizeConfig.defaultSize! * 3.1,
+                bottom: SizeConfig.defaultSize! * 0.1),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                Column(
-                  children: <Widget>[
-                    textWidget(
-                        '121k',
-                        FontFamilyConstants.montserrat,
-                        Color_Const.red,
-                        FontSizeConstants.fontsize15,
-                        FontWeight.normal),
-                    textWidget(
-                        'Followers',
-                        FontFamilyConstants.montserrat,
-                        Color_Const.grey,
-                        FontSizeConstants.fontsize15,
-                        FontWeight.normal)
-                  ],
-                ),
-                Column(
-                  children: <Widget>[
-                    textWidget(
-                        '152',
-                        FontFamilyConstants.montserrat,
-                        Color_Const.red,
-                        FontSizeConstants.fontsize15,
-                        FontWeight.normal),
-                    textWidget(
-                        'Following',
-                        FontFamilyConstants.montserrat,
-                        Color_Const.grey,
-                        FontSizeConstants.fontsize15,
-                        FontWeight.normal)
-                  ],
-                ),
-                Column(
-                  children: <Widget>[
-                    textWidget(
-                        '455',
-                        FontFamilyConstants.montserrat,
-                        Color_Const.red,
-                        FontSizeConstants.fontsize15,
-                        FontWeight.normal),
-                    textWidget(
-                        'Taste Maker',
-                        FontFamilyConstants.montserrat,
-                        Color_Const.grey,
-                        FontSizeConstants.fontsize15,
-                        FontWeight.normal),
-                  ],
-                )
+                columnWidget(AllStringsConstants.numberOfFollowerResturantViews,
+                    AllStringsConstants.followersWordResturantViews),
+                columnWidget(
+                    AllStringsConstants.numberOfFollowingResturantViews,
+                    AllStringsConstants.followingWordResturantViewsTabBar),
+                columnWidget(
+                    AllStringsConstants.numberOfTestMakerResturantViews,
+                    AllStringsConstants.testMakerWordResturantViewsTabBar),
               ],
             ),
           ),
-          TabBar(
-            controller: tabController,
-            indicatorColor: Colors.transparent,
-            labelColor: Color_Const.ddarkBlue,
-            isScrollable: true,
-            unselectedLabelColor: Color_Const.darkWhite,
-            tabs: <Widget>[
-              Tab(
-                child: textWidgetWithoutColor(
-                    AllStringsConstants.ResturantViewsNames,
-                    FontFamilyConstants.montserrat,
-                    FontSizeConstants.fontsize20,
-                    FontWeight.normal),
-              ),
-              Tab(
-                child: textWidgetWithoutColor(
-                    'My Wishlist',
-                    FontFamilyConstants.montserrat,
-                    FontSizeConstants.fontsize20,
-                    FontWeight.normal),
-              ),
-            ],
-          ),
+          tabBarWidget(tabController),
           const VerticalSpace(1),
-          Container(
+          SizedBox(
               height:
                   SizeConfig.defaultSize! * (SizeConfig.screenHeight! - 450.0),
               child: TabBarView(
                 controller: tabController,
-                children: <Widget>[],
+                children: const <Widget>[
+                  MyRestaurantsList(),
+                  MyRestaurantsList()
+                ],
               ))
         ],
       ),

@@ -26,6 +26,7 @@ class Color_Const {
   static Color darkWhite = Color(0xFFB6BDC7);
   static Color darkBlue =  Color(0xFF1D3062);
   static Color ddarkBlue =  Color(0xFF33426F);
+  static Color darkGreen =  Color(0xFF116D51);
 
   static Color red = Colors.red;
 

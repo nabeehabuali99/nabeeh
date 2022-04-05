@@ -28,7 +28,28 @@ class AllStringsConstants {
  static const appBarTitleResturantViews  = 'Profile';
  static const personNameResturantViews  = 'Chloe Hannouille';
  static const locationPersonResturantViews  =  'Dhaka-Bangladesh';
- static const ResturantViewsNames  =  'My Restaurants';
+ static const numberOfFollowerResturantViews   =  '121k';
+ static const  followersWordResturantViews   =  'Followers';
+ static const  wishListWordResturantViewsTabBar   = 'My Wishlist';
+ static const  followingWordResturantViewsTabBar   = 'Following';
+ static const  numberOfFollowingResturantViews   ='152';
+ static const  numberOfTestMakerResturantViews   = '455';
+ static const  testMakerWordResturantViewsTabBar   = 'Taste Maker';
+
+
+ static const  nameOfTropiclRestaurantItem   = 'Tropical fruits';
+ static const  nameOfOrangeRestaurantItem   = 'Orange fruits';
+ static const  nameOfSpringfieldRestaurantItem   = 'Springfield';
+ static const  nameOfBreakfastRestaurantItem   = 'Breakfast Dine';
+
+   static const  nameOfTropiclTypeRestaurantItem   = 'Greyish day';
+   static const  nameOfOrangeTypeRestaurantItem   = 'Portugecis';
+   static const  nameOfSpringfieldTypeRestaurantItem   =   'States Dishes';
+   static const  nameOfBreakfastTypeRestaurantItem   = 'Costa Rica';
+   static const  dateOfTypeRestaurantItem   = '20-05-18';
+   static const  ratingOfTypeRestaurantItem3   = '3';
+   static const  ratingOfTypeRestaurantItem5   = '5';
+
 
 
 }

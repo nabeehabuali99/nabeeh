@@ -10,6 +10,7 @@ import 'Fruits Design/homeFruits.dart';
 import 'Plants Design/homePlants.dart';
 import 'Restaurant Reviews/ProfileResturantReviews.dart';
 import 'Scroll Effects/Scrolling.dart';
+import 'Starbucks Coffee/HomeStarbucks.dart';
 import 'fancy Foods/home fancy.dart';
 
 void main() => runApp(const MyApp());
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: route.controller,
-      home: RestaurantProfile(), //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI() || TravelHome() ||FoodRecipesPage() ||CakeCataloge() || HomeScreen ||ProfileApp ||HomeScreenClean()
+      home: HomeStarbucks(), //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI() || TravelHome() ||FoodRecipesPage() ||CakeCataloge() || HomeScreen ||ProfileApp ||HomeScreenClean()
     );
   }
 }
