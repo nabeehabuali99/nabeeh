@@ -3,7 +3,7 @@ import 'package:test_app_nabeeh/Constants/Colors.dart';
 import 'package:test_app_nabeeh/Constants/My%20Icons.dart';
 import 'package:test_app_nabeeh/Constants/Routes.dart' as route;
 
-import '../../Constants/Space Widgets.dart';
+import '../../Constants/SizeConfig/Space Widgets.dart';
 import '../Widget/GetBarberHairStyle.dart';
 import '../Widget/GetDateHairStyle.dart';
 import '../Widget/GetServiceHairStyle.dart';

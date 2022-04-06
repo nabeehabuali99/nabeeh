@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:test_app_nabeeh/Constants/Colors.dart';
 import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Text Widget.dart';
-import 'package:test_app_nabeeh/Constants/Size_Config.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Size_Config.dart';
 import 'package:image_picker/image_picker.dart';
 import '../Constants/My Icons.dart';
 import '../Constants/Routes.dart' as route;

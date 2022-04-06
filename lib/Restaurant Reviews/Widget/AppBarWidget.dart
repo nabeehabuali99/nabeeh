@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/FontFamilyConstants.dart';
 import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Text%20Widget.dart';
-import 'package:test_app_nabeeh/Constants/Size_Config.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Size_Config.dart';
 
 import '../../Constants/Colors.dart';
-import '../../Constants/FontSizeConstants.dart';
-import '../../Constants/My Icons.dart';
+ import '../../Constants/My Icons.dart';
 
 import '../../Constants/Shared Widgets/Icon Button Widget.dart';
+import '../../Constants/SizeConfig/FontSizeConstants.dart';
 import '../../Constants/StringsAllProject.dart';
 
 Widget appBarWidget() {

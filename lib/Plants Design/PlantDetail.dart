@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/My%20Icons.dart';
-import 'package:test_app_nabeeh/Constants/Space%20Widgets.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Space%20Widgets.dart';
 
 import '../Constants/Colors.dart';
 import '../Constants/Shared Widgets/Text Widget.dart';
-import '../Constants/Size_Config.dart';
+import '../Constants/SizeConfig/Size_Config.dart';
 
 class PlantDetail extends StatelessWidget {
   const PlantDetail({Key? key}) : super(key: key);

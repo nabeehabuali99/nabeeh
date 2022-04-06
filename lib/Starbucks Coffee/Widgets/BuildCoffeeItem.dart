@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/FontFamilyConstants.dart';
-import 'package:test_app_nabeeh/Constants/FontSizeConstants.dart';
-import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Icon%20Button%20Widget.dart';
-import 'package:test_app_nabeeh/Constants/Space%20Widgets.dart';
+ import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Icon%20Button%20Widget.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Space%20Widgets.dart';
 
 import '../../Constants/Colors.dart';
 import '../../Constants/My Icons.dart';
 import '../../Constants/Shared Widgets/Text Widget.dart';
-import '../../Constants/Size_Config.dart';
+import '../../Constants/SizeConfig/FontSizeConstants.dart';
+import '../../Constants/SizeConfig/Size_Config.dart';
 
 buildCoffeeItem(
     String imgPath, String productName, String productType, String price) {
@@ -60,6 +60,7 @@ buildCoffeeItem(
                       FontFamilyConstants.montserrat,
                       Color_Const.grey,
                       FontSizeConstants.fontsize15,
+
                       FontWeight.normal),
                 ),
                 Padding(
@@ -83,7 +84,8 @@ buildCoffeeItem(
                       textWidgetWithoutColor(
                           '\$' + price,
                           FontFamilyConstants.montserrat,
-                          FontSizeConstants.fontsize20,
+                          FontSizeConstants.fontsize15,
+
                           FontWeight.bold),
                       Container(
                         height: SizeConfig.defaultSize! * 4,
@@ -94,7 +96,7 @@ buildCoffeeItem(
                             color: Colors.grey.withOpacity(0.2)),
                         child: Center(
                           child: iconButtonWidget(MyIcons.add, Color_Const.grey,
-                              SizeConfig.defaultSize! * 1.5, () {}),
+                             FontSizeConstants.fontsize15, () {}),
                         ),
                       ),
                       const VerticalSpace(2),

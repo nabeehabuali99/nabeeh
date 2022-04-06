@@ -3,11 +3,12 @@ import 'package:test_app_nabeeh/Constants/Routes.dart' as route;
 import 'Car Service App/CurrentVehicle.dart';
 import 'Clean Design/Fashion Store/StoreHomeFashion.dart';
 import 'Clean Design/Hairstylist App/homeHiarStyle.dart';
-import 'Constants/Size_Config.dart';
+import 'Constants/SizeConfig/Size_Config.dart';
 import 'Currency App/CurrencyView.dart';
 import 'Floating buttons using dialogs/FloatingButtons.dart';
 import 'Fruits Design/homeFruits.dart';
 import 'Plants Design/homePlants.dart';
+import 'Rental Service/RentalHome.dart';
 import 'Restaurant Reviews/ProfileResturantReviews.dart';
 import 'Scroll Effects/Scrolling.dart';
 import 'Starbucks Coffee/HomeStarbucks.dart';
@@ -24,10 +25,10 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: route.controller,
-      home: HomeStarbucks(), //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI() || TravelHome() ||FoodRecipesPage() ||CakeCataloge() || HomeScreen ||ProfileApp ||HomeScreenClean()
+      home: RentalHome(), //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI() || TravelHome() ||FoodRecipesPage() ||CakeCataloge() || HomeScreen ||ProfileApp ||HomeScreenClean()
     );
   }
 }
 //HomePlants
 //ChefDesign() // HomeHairStyle() //HomeFruits() //CurrencyView() //CurrentCar()//FashionStore()
-//ScrollEffects        //FloatingButtons ///FancyFood  //RestaurantProfile
+//ScrollEffects        //FloatingButtons ///FancyFood  //RestaurantProfile //RentalHome

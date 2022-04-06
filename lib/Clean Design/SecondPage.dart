@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../Constants/Size_Config.dart';
+import '../Constants/SizeConfig/Size_Config.dart';
 import 'package:test_app_nabeeh/Constants/Routes.dart' as route;
 
 class SecondPage extends StatefulWidget {

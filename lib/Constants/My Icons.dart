@@ -20,6 +20,7 @@ class MyIcons {
 
   static const IconData star = Icons.star;
   static const IconData add = Icons.add;
+  static const IconData send = Icons.send;
 
   static const IconData timers = Icons.timer;
 

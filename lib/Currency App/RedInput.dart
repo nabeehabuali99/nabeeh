@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:test_app_nabeeh/Constants/Space%20Widgets.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Space%20Widgets.dart';
 
 import '../Constants/Colors.dart';
 import '../Constants/My Icons.dart';

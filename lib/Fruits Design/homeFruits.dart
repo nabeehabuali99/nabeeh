@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/My%20Icons.dart';
 
 import '../Constants/Colors.dart';
-import '../Constants/Size_Config.dart';
+import '../Constants/SizeConfig/Size_Config.dart';
 import 'ViewFruits.dart';
 import '../Constants/Routes.dart' as route;
 

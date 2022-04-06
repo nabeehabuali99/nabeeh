@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/Colors.dart';
-import 'package:test_app_nabeeh/Constants/Space%20Widgets.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Space%20Widgets.dart';
 import 'package:test_app_nabeeh/Constants/StringsAllProject.dart';
 
 import '../Constants/FontFamilyConstants.dart';

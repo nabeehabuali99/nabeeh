@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/Colors.dart';
 import 'package:test_app_nabeeh/Constants/My%20Icons.dart';
 import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Text%20Widget.dart';
-import 'package:test_app_nabeeh/Constants/Size_Config.dart';
-import 'package:test_app_nabeeh/Constants/Space%20Widgets.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Size_Config.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Space%20Widgets.dart';
 import '../Constants/Routes.dart' as route;
 import '../Constants/Shared Widgets/Icon Button Widget.dart';
 

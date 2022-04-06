@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/Colors.dart';
 import 'package:test_app_nabeeh/Constants/My%20Icons.dart';
-import 'package:test_app_nabeeh/Constants/Space%20Widgets.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Space%20Widgets.dart';
 
 import '../../Constants/Shared Widgets/Text Widget.dart';
 import '../../Constants/Routes.dart'as route;

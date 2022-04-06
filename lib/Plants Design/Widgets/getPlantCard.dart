@@ -3,7 +3,7 @@ import 'package:test_app_nabeeh/Constants/Colors.dart';
 import 'package:test_app_nabeeh/Constants/My%20Icons.dart';
 
 import '../../Constants/Shared Widgets/Text Widget.dart';
-import '../../Constants/Space Widgets.dart';
+import '../../Constants/SizeConfig/Space Widgets.dart';
 import '../PlantDetail.dart';
 
 getPlantCard(String imgPath, String price, String plantType, String plantName,

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/Colors.dart';
 import 'package:test_app_nabeeh/Constants/FontFamilyConstants.dart';
-import 'package:test_app_nabeeh/Constants/FontSizeConstants.dart';
-import 'package:test_app_nabeeh/Constants/PathImageConstants.dart';
+ import 'package:test_app_nabeeh/Constants/PathImageConstants.dart';
 import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Icon%20Button%20Widget.dart';
 import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Text%20Widget.dart';
-import 'package:test_app_nabeeh/Constants/Size_Config.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Size_Config.dart';
 
 import '../Constants/My Icons.dart';
+import '../Constants/SizeConfig/FontSizeConstants.dart';
 import 'Widgets/BuildCoffeeItem.dart';
 import 'Widgets/BuildItem.dart';
 
@@ -21,9 +21,7 @@ class HomeStarbucks extends StatefulWidget {
 class _HomeStarbucksState extends State<HomeStarbucks> {
   @override
   Widget build(BuildContext context) {
-    var fontSize20 = MediaQuery.of(context).size.width * 0.02 +
-        MediaQuery.of(context).size.height * 0.02;
-
+    FontSizeConstants().init(context);
     SizeConfig().init(context);
     return Scaffold(
         body: ListView(
@@ -77,8 +75,12 @@ class _HomeStarbucksState extends State<HomeStarbucks> {
                               SizeConfig.defaultSize! * 1),
                           color: Color_Const.red),
                       child: Center(
-                        child: textWidget('8', FontFamilyConstants.montserrat,
-                            Color_Const.white, fontSize20, FontWeight.normal),
+                        child: textWidget(
+                            '8',
+                            FontFamilyConstants.montserrat,
+                            Color_Const.white,
+                            FontSizeConstants.fontsize20,
+                            FontWeight.normal),
                       ),
                     ),
                   )
@@ -88,9 +90,12 @@ class _HomeStarbucksState extends State<HomeStarbucks> {
           ],
         ),
         Padding(
-          padding: EdgeInsets.all(SizeConfig.defaultSize! * 1.5),
-          child: textWidgetWithoutColor('Starbucks Coffee',
-              FontFamilyConstants.montserrat, fontSize20, FontWeight.bold),
+          padding: EdgeInsets.all(SizeConfig.screenHeight! / 20),
+          child: textWidgetWithoutColor(
+              'Starbucks Coffee',
+              FontFamilyConstants.montserrat,
+              FontSizeConstants.fontsize20,
+              FontWeight.bold),
         ),
         Padding(
           padding: EdgeInsets.only(
@@ -98,7 +103,7 @@ class _HomeStarbucksState extends State<HomeStarbucks> {
               top: SizeConfig.defaultSize! * 1.5,
               bottom: SizeConfig.defaultSize! * 1.5),
           child: Container(
-            height: SizeConfig.defaultSize! * 10.5,
+            height: SizeConfig.screenHeight! / 3.5,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: const <Widget>[
@@ -115,7 +120,7 @@ class _HomeStarbucksState extends State<HomeStarbucks> {
               top: SizeConfig.defaultSize! * 2,
               bottom: SizeConfig.defaultSize! * 18),
           child: Container(
-            height: SizeConfig.defaultSize! * 40,
+            height: SizeConfig.screenHeight! / 1.0,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: <Widget>[

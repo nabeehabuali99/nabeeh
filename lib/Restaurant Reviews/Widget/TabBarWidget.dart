@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../Constants/Colors.dart';
 import '../../Constants/FontFamilyConstants.dart';
-import '../../Constants/FontSizeConstants.dart';
-import '../../Constants/Shared Widgets/Text Widget.dart';
+ import '../../Constants/Shared Widgets/Text Widget.dart';
+import '../../Constants/SizeConfig/FontSizeConstants.dart';
 import '../../Constants/StringsAllProject.dart';
 
 Widget tabBarWidget(TabController tabController){

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:test_app_nabeeh/Constants/Space%20Widgets.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Space%20Widgets.dart';
 import 'package:test_app_nabeeh/fancy%20Foods/Widgets/listItem.dart';
 
 import '../Constants/Colors.dart';
 import '../Constants/FontFamilyConstants.dart';
-import '../Constants/FontSizeConstants.dart';
-import '../Constants/My Icons.dart';
+ import '../Constants/My Icons.dart';
 import '../Constants/PathImageConstants.dart';
 import '../Constants/Shared Widgets/Text Widget.dart';
-import '../Constants/Size_Config.dart';
+import '../Constants/SizeConfig/FontSizeConstants.dart';
+import '../Constants/SizeConfig/Size_Config.dart';
 import '../Constants/StringsAllProject.dart';
 import 'Widgets/TabBarWidget.dart';
 import 'Widgets/TextFieldWidget.dart';

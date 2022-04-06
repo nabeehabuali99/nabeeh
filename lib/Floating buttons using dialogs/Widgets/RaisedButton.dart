@@ -2,9 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../Constants/Colors.dart';
 import '../../Constants/FontFamilyConstants.dart';
-import '../../Constants/FontSizeConstants.dart';
+
 import '../../Constants/Shared Widgets/Text Widget.dart';
-import '../../Constants/Size_Config.dart';
+import '../../Constants/SizeConfig/FontSizeConstants.dart';
+import '../../Constants/SizeConfig/Size_Config.dart';
 import '../../Constants/StringsAllProject.dart';
 
 Widget raisedButtonWidget(Function() onTap, Color color, Color textColor) {

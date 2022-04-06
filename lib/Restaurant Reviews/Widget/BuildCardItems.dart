@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:test_app_nabeeh/Constants/FontSizeConstants.dart';
-import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Text%20Widget.dart';
+ import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Text%20Widget.dart';
 
 import '../../Constants/Colors.dart';
 import '../../Constants/FontFamilyConstants.dart';
 import '../../Constants/My Icons.dart';
-import '../../Constants/Size_Config.dart';
-import '../../Constants/Space Widgets.dart';
+import '../../Constants/SizeConfig/FontSizeConstants.dart';
+import '../../Constants/SizeConfig/Size_Config.dart';
+import '../../Constants/SizeConfig/Space Widgets.dart';
 
 buildCard(String restaurantName, String type, String date, String rating,
     String imgPath) {

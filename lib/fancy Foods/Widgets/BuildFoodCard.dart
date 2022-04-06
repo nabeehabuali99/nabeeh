@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:test_app_nabeeh/Constants/FontSizeConstants.dart';
-import 'package:test_app_nabeeh/Constants/Size_Config.dart';
+ import 'package:test_app_nabeeh/Constants/SizeConfig/Size_Config.dart';
 import 'package:test_app_nabeeh/Constants/StringsAllProject.dart';
 
 import '../../Constants/Colors.dart';
 import '../../Constants/FontFamilyConstants.dart';
 import '../../Constants/My Icons.dart';
 import '../../Constants/Shared Widgets/Text Widget.dart';
-import '../../Constants/Space Widgets.dart';
+import '../../Constants/SizeConfig/FontSizeConstants.dart';
+import '../../Constants/SizeConfig/Space Widgets.dart';
 
 Widget buildFoodCard(
     String imgPath, String foodName, double price, int calCount, bool hasMilk) {

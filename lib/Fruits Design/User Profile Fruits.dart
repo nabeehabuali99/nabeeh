@@ -3,7 +3,7 @@ import 'package:test_app_nabeeh/Constants/Colors.dart';
 import 'package:test_app_nabeeh/Constants/My%20Icons.dart';
 
 import '../Constants/Shared Widgets/Text Widget.dart';
-import '../Constants/Size_Config.dart';
+import '../Constants/SizeConfig/Size_Config.dart';
 
 class UserProfileFruit extends StatefulWidget {
   const UserProfileFruit({Key? key}) : super(key: key);

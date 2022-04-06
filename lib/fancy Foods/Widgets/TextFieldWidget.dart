@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../../Constants/Colors.dart';
 import '../../Constants/FontFamilyConstants.dart';
-import '../../Constants/FontSizeConstants.dart';
-import '../../Constants/My Icons.dart';
-import '../../Constants/Size_Config.dart';
+ import '../../Constants/My Icons.dart';
+import '../../Constants/SizeConfig/FontSizeConstants.dart';
+import '../../Constants/SizeConfig/Size_Config.dart';
 import '../../Constants/StringsAllProject.dart';
 
 Widget textFieldWidget(){

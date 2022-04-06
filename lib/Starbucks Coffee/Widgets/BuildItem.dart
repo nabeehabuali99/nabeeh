@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/FontFamilyConstants.dart';
-import 'package:test_app_nabeeh/Constants/FontSizeConstants.dart';
-import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Text%20Widget.dart';
-import 'package:test_app_nabeeh/Constants/Size_Config.dart';
-import 'package:test_app_nabeeh/Constants/Space%20Widgets.dart';
+ import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Text%20Widget.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Size_Config.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Space%20Widgets.dart';
 
 import '../../Constants/Colors.dart';
+import '../../Constants/SizeConfig/FontSizeConstants.dart';
 
 var selectedItem = 'All products';
 
@@ -23,7 +23,7 @@ class _BuildItemState extends State<BuildItem> {
 
   @override
   Widget build(BuildContext context) {
-    var fontSize15=MediaQuery.of(context).size.width*0.01+MediaQuery.of(context).size.height*0.01;
+FontSizeConstants().init(context);
     return Padding(
       padding: EdgeInsets.only(
           right: SizeConfig.defaultSize! * 1,
@@ -58,7 +58,7 @@ class _BuildItemState extends State<BuildItem> {
                   widget.count.toString(),
                   FontFamilyConstants.montserrat,
                   switchHighlightColor(widget.productName),
-                  fontSize15,
+                  FontSizeConstants.fontsize10,
                   FontWeight.bold,
                 ),
               ),
@@ -69,7 +69,7 @@ class _BuildItemState extends State<BuildItem> {
                     widget.productName,
                     FontFamilyConstants.montserrat,
                     switchHighlightColor(widget.productName),
-                    fontSize15,
+                    FontSizeConstants.fontsize13,
                     FontWeight.normal),
               )
             ],

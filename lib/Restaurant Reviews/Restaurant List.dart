@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/PathImageConstants.dart';
-import 'package:test_app_nabeeh/Constants/Size_Config.dart';
-import 'package:test_app_nabeeh/Constants/Space%20Widgets.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Size_Config.dart';
+import 'package:test_app_nabeeh/Constants/SizeConfig/Space%20Widgets.dart';
 import 'package:test_app_nabeeh/Constants/StringsAllProject.dart';
 
 import 'Widget/BuildCardItems.dart';
