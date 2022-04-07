@@ -8,6 +8,7 @@ class DimensionsConstants {
   static late var dimensions15;
   static late var dimensions20;
   static late var dimensions30;
+  static late var dimensions70;
 
   void init(BuildContext context) {
     dimensions2 = MediaQuery.of(context).size.width * 0.0013 +
@@ -24,7 +25,9 @@ class DimensionsConstants {
         MediaQuery.of(context).size.height * 0.02;
     dimensions30 = MediaQuery.of(context).size.width * 0.03 +
         MediaQuery.of(context).size.height * 0.03;
+    dimensions70 = MediaQuery.of(context).size.width * 0.05 +
+        MediaQuery.of(context).size.height * 0.05;
 
-
+//print(dimensions70);
   }
 }

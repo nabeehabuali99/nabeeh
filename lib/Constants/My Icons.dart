@@ -19,6 +19,7 @@ class MyIcons {
   static const IconData fastfood = Icons.fastfood;
 
   static const IconData star = Icons.star;
+  static const IconData starborder = Icons.star_border;
   static const IconData add = Icons.add;
   static const IconData send = Icons.send;
 

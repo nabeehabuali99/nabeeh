@@ -13,6 +13,10 @@ class PathConstants {
   static const pic22Image = _ASSETS_IMAGE_PATH + 'pic22.png';
   static const pic11Image = _ASSETS_IMAGE_PATH + 'pic11.png';
   static const hughImage = _ASSETS_IMAGE_PATH + 'hugh.png';
+  static const food3 = _ASSETS_IMAGE_PATH + 'food3.png';
+  static const food2 = _ASSETS_IMAGE_PATH + 'food2.png';
+  static const model2 = _ASSETS_IMAGE_PATH + 'model2.png';
+  static const model1 = _ASSETS_IMAGE_PATH + 'model1.png';
 
 
 }

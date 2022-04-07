@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/Colors.dart';
 import 'package:test_app_nabeeh/Constants/FontFamilyConstants.dart';
- import 'package:test_app_nabeeh/Constants/PathImageConstants.dart';
+import 'package:test_app_nabeeh/Constants/PathImageConstants.dart';
 import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Icon%20Button%20Widget.dart';
 import 'package:test_app_nabeeh/Constants/Shared%20Widgets/Text%20Widget.dart';
 import 'package:test_app_nabeeh/Constants/SizeConfig/Size_Config.dart';
+import 'package:test_app_nabeeh/Constants/StringsAllProject.dart';
 
 import '../Constants/My Icons.dart';
 import '../Constants/SizeConfig/FontSizeConstants.dart';
@@ -79,7 +80,7 @@ class _HomeStarbucksState extends State<HomeStarbucks> {
                             '8',
                             FontFamilyConstants.montserrat,
                             Color_Const.white,
-                            FontSizeConstants.fontsize20,
+                            FontSizeConstants.fontsize15,
                             FontWeight.normal),
                       ),
                     ),
@@ -92,7 +93,7 @@ class _HomeStarbucksState extends State<HomeStarbucks> {
         Padding(
           padding: EdgeInsets.all(SizeConfig.screenHeight! / 20),
           child: textWidgetWithoutColor(
-              'Starbucks Coffee',
+              AllStringsConstants.nameOfCaffeh,
               FontFamilyConstants.montserrat,
               FontSizeConstants.fontsize20,
               FontWeight.bold),
@@ -104,13 +105,16 @@ class _HomeStarbucksState extends State<HomeStarbucks> {
               bottom: SizeConfig.defaultSize! * 1.5),
           child: Container(
             height: SizeConfig.screenHeight! / 3.5,
-            child: ListView(
+            child: ListView.builder(
+              itemBuilder: ((context, index) {
+                return BuildItem(
+                    productName: AllStringsConstants
+                        .pruductDetailSturbucs[index]['type'],
+                    count: AllStringsConstants.pruductDetailSturbucs[index]
+                        ['count']);
+              }),
+              itemCount: AllStringsConstants.pruductDetailSturbucs.length,
               scrollDirection: Axis.horizontal,
-              children: const <Widget>[
-                BuildItem(productName: 'All products', count: 59),
-                BuildItem(productName: 'Espresso', count: 17),
-                BuildItem(productName: 'Iced Tea', count: 20),
-              ],
             ),
           ),
         ),
@@ -121,16 +125,16 @@ class _HomeStarbucksState extends State<HomeStarbucks> {
               bottom: SizeConfig.defaultSize! * 18),
           child: Container(
             height: SizeConfig.screenHeight! / 1.0,
-            child: ListView(
+            child: ListView.builder(
+              itemBuilder: ((contexr, index) {
+                return buildCoffeeItem(
+                    PathConstants.coffeeImage,
+                    AllStringsConstants.pruductinfoSturbucs[index]['type'],
+                    AllStringsConstants.pruductinfoSturbucs[index]['info'],
+                    AllStringsConstants.pruductinfoSturbucs[index]['price']);
+              }),
+              itemCount: AllStringsConstants.pruductinfoSturbucs.length,
               scrollDirection: Axis.horizontal,
-              children: <Widget>[
-                buildCoffeeItem(PathConstants.coffeeImage,
-                    'Latte with Turmeric', 'Iced Coffee', '2.99'),
-                buildCoffeeItem(PathConstants.coffeeImage2,
-                    'Latte with Turmeric', 'Iced Coffee', '2.99'),
-                buildCoffeeItem(PathConstants.coffeeImage3,
-                    'Latte with Turmeric', 'Iced Coffee', '2.99')
-              ],
             ),
           ),
         ),

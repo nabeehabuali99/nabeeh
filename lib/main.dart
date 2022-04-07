@@ -6,6 +6,7 @@ import 'Clean Design/Hairstylist App/homeHiarStyle.dart';
 import 'Constants/SizeConfig/Size_Config.dart';
 import 'Currency App/CurrencyView.dart';
 import 'Floating buttons using dialogs/FloatingButtons.dart';
+import 'FoodReviews/HomeFoodReviews.dart';
 import 'Fruits Design/homeFruits.dart';
 import 'Plants Design/homePlants.dart';
 import 'Rental Service/RentalHome.dart';
@@ -25,10 +26,10 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: route.controller,
-      home: RentalHome(), //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI() || TravelHome() ||FoodRecipesPage() ||CakeCataloge() || HomeScreen ||ProfileApp ||HomeScreenClean()
+      home: HomeFoodReviews(), //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI() || TravelHome() ||FoodRecipesPage() ||CakeCataloge() || HomeScreen ||ProfileApp ||HomeScreenClean()
     );
   }
 }
 //HomePlants
 //ChefDesign() // HomeHairStyle() //HomeFruits() //CurrencyView() //CurrentCar()//FashionStore()
-//ScrollEffects        //FloatingButtons ///FancyFood  //RestaurantProfile //RentalHome
+//ScrollEffects        //FloatingButtons ///FancyFood  //RestaurantProfile //RentalHome ///HomeFoodReviews
