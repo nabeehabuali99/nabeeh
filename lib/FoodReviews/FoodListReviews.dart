@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:test_app_nabeeh/Constants/FontFamilyConstants.dart';
 import 'package:test_app_nabeeh/Constants/SizeConfig/FontSizeConstants.dart';
 import 'package:test_app_nabeeh/Constants/SizeConfig/Space%20Widgets.dart';
+import 'package:test_app_nabeeh/Constants/StringsAllProject.dart';
 
 import '../Constants/Colors.dart';
 import '../Constants/My Icons.dart';
@@ -23,19 +24,21 @@ class _FoodListReviewsState extends State<FoodListReviews> {
     return ListView(
       children: <Widget>[
         Padding(
-          padding: EdgeInsets.only(left:SizeConfig.defaultSize! *1.5, right: SizeConfig.defaultSize! *1.5,
-              top:SizeConfig.defaultSize! *1.5),
+          padding: EdgeInsets.only(
+              left: SizeConfig.defaultSize! * 1.5,
+              right: SizeConfig.defaultSize! * 1.5,
+              top: SizeConfig.defaultSize! * 1.5),
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
               textWidgetWithoutColor(
-                'Recommended',
+                AllStringsConstants.titleOfListFoodReviews,
                 FontFamilyConstants.quicksand,
                 FontSizeConstants.fontsize20,
                 FontWeight.bold,
               ),
               textWidget(
-                'SEE ALL',
+                AllStringsConstants.extnsiosOfListFoodReviews,
                 FontFamilyConstants.quicksand,
                 Color_Const.darkgreen,
                 FontSizeConstants.fontsize13,
@@ -45,18 +48,18 @@ class _FoodListReviewsState extends State<FoodListReviews> {
           ),
         ),
         Container(
-            height: SizeConfig.defaultSize! *28,
+            height: SizeConfig.defaultSize! * 28,
             width: SizeConfig.defaultSize! * 15,
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: <Widget>[
-                getCard(PathConstants.food3, 'Granola with fruits'),
-                getCard(PathConstants.food2, 'Bread with avocado'),
+                getCard(PathConstants.food3,
+                    AllStringsConstants.titleOfGetCardFoodReviews1),
+                getCard(PathConstants.food2,
+                    AllStringsConstants.titleOfTapBarFoodReviews2),
               ],
             ))
       ],
     );
   }
-
-
 }

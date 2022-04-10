@@ -11,6 +11,8 @@ class MyIcons {
   static const IconData playButton = Icons.play_arrow;
   static const IconData navigation = Icons.navigation;
   static const IconData edit = Icons.edit;
+  static const IconData filterList = Icons.filter_list;
+  static const IconData  moreh = Icons.more_horiz;
 
   static const IconData Location = Icons.location_on;
   static const IconData networkcCell = Icons.network_cell;
@@ -31,6 +33,7 @@ class MyIcons {
 
   static const IconData arrowDown = Icons.arrow_downward;
   static const IconData more = Icons.more;
+
 
   static const IconData check = Icons.check;
   static const IconData Menu = Icons.menu;

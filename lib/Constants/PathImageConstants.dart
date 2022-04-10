@@ -17,6 +17,17 @@ class PathConstants {
   static const food2 = _ASSETS_IMAGE_PATH + 'food2.png';
   static const model2 = _ASSETS_IMAGE_PATH + 'model2.png';
   static const model1 = _ASSETS_IMAGE_PATH + 'model1.png';
+  static const GreenApple  = _ASSETS_IMAGE_PATH + 'GreenApple.png';
+  static const Lemons2 = _ASSETS_IMAGE_PATH + 'Lemons2.png';
+  static const orangeF = _ASSETS_IMAGE_PATH + 'orangeF.png';
+  static const avocado = _ASSETS_IMAGE_PATH + 'avocado.png';
+  static const grapes = _ASSETS_IMAGE_PATH + 'grapes.png';
+  static const plate1 = _ASSETS_IMAGE_PATH + 'plate1.png';
+  static const plate2 = _ASSETS_IMAGE_PATH + 'plate2.png';
+  static const plate3 = _ASSETS_IMAGE_PATH + 'plate3.png';
+  static const plate4 = _ASSETS_IMAGE_PATH + 'plate4.png';
+  static const plate5 = _ASSETS_IMAGE_PATH + 'plate5.png';
+  static const plate6 = _ASSETS_IMAGE_PATH + 'plate6.png';
 
 
 }

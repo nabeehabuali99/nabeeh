@@ -6,9 +6,11 @@ import 'package:test_app_nabeeh/Constants/SizeConfig/FontSizeConstants.dart';
 import 'package:test_app_nabeeh/Constants/SizeConfig/IconSizeConstants.dart';
 import 'package:test_app_nabeeh/Constants/SizeConfig/Size_Config.dart';
 import 'package:test_app_nabeeh/Constants/SizeConfig/Space%20Widgets.dart';
+import 'package:test_app_nabeeh/Constants/StringsAllProject.dart';
 import 'package:test_app_nabeeh/FoodReviews/FoodListReviews.dart';
 import '../Constants/FontFamilyConstants.dart';
 import '../Constants/PathImageConstants.dart';
+import 'Widgets/TapBar Widget.dart';
 
 class HomeFoodReviews extends StatefulWidget {
   const HomeFoodReviews({Key? key}) : super(key: key);
@@ -73,12 +75,12 @@ class _HomeFoodReviewsState extends State<HomeFoodReviews>
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       textWidgetWithoutColor(
-                          'Elisabeth',
+                          AllStringsConstants.NameOfpersonFoodReviews,
                           FontFamilyConstants.quicksand,
                           FontSizeConstants.fontsize15,
                           FontWeight.bold),
                       textWidget(
-                          '1,974 Followers',
+                          AllStringsConstants.numberOfFollowersFoodReviews,
                           FontFamilyConstants.quicksand,
                           Color_Const.grey,
                           FontSizeConstants.fontsize13,
@@ -95,7 +97,7 @@ class _HomeFoodReviewsState extends State<HomeFoodReviews>
                             DimensionsConstants.dimensions11)),
                     child: Center(
                       child: textWidget(
-                          'Follow',
+                          AllStringsConstants.folowWordFoodReviews,
                           FontFamilyConstants.quicksand,
                           Color_Const.darkgreen,
                           FontSizeConstants.fontsize10,
@@ -109,40 +111,10 @@ class _HomeFoodReviewsState extends State<HomeFoodReviews>
         ),
         Padding(
           padding: EdgeInsets.only(top: SizeConfig.defaultSize! * .5),
-          child: TabBar(
-            controller: tabController,
-            indicatorColor: Color_Const.darkgreen,
-            labelColor: Color_Const.black,
-            indicatorSize: TabBarIndicatorSize.label,
-            unselectedLabelColor: Color_Const.grey.withOpacity(0.6),
-            isScrollable: true,
-            tabs: <Widget>[
-              Tab(
-                child: textWidgetWithoutColor(
-                    'Recipes',
-                    FontFamilyConstants.montserrat,
-                    FontSizeConstants.fontsize15,
-                    FontWeight.bold),
-              ),
-              Tab(
-                child: textWidgetWithoutColor(
-                    'Gallery',
-                    FontFamilyConstants.montserrat,
-                    FontSizeConstants.fontsize15,
-                    FontWeight.bold),
-              ),
-              Tab(
-                child: textWidgetWithoutColor(
-                    'Story',
-                    FontFamilyConstants.montserrat,
-                    FontSizeConstants.fontsize15,
-                    FontWeight.bold),
-              )
-            ],
-          ),
+          child: tapBar(tabController),
         ),
-        Container(
-          height: SizeConfig.defaultSize! *50,
+        SizedBox(
+          height: SizeConfig.defaultSize! * 50,
           child: TabBarView(
             controller: tabController,
             children: const <Widget>[

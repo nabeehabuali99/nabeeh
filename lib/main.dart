@@ -8,6 +8,8 @@ import 'Currency App/CurrencyView.dart';
 import 'Floating buttons using dialogs/FloatingButtons.dart';
 import 'FoodReviews/HomeFoodReviews.dart';
 import 'Fruits Design/homeFruits.dart';
+import 'Fruits Home Page 41/Fruits.dart';
+import 'Nutrition App/Nutrition app.dart';
 import 'Plants Design/homePlants.dart';
 import 'Rental Service/RentalHome.dart';
 import 'Restaurant Reviews/ProfileResturantReviews.dart';
@@ -26,10 +28,10 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
       onGenerateRoute: route.controller,
-      home: HomeFoodReviews(), //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI() || TravelHome() ||FoodRecipesPage() ||CakeCataloge() || HomeScreen ||ProfileApp ||HomeScreenClean()
+      home: NutritionApp(), //    SignIn()  ||   MyHomePage()  || UsersProfile() || CardsUI() || TravelHome() ||FoodRecipesPage() ||CakeCataloge() || HomeScreen ||ProfileApp ||HomeScreenClean()
     );
   }
 }
 //HomePlants
 //ChefDesign() // HomeHairStyle() //HomeFruits() //CurrencyView() //CurrentCar()//FashionStore()
-//ScrollEffects        //FloatingButtons ///FancyFood  //RestaurantProfile //RentalHome ///HomeFoodReviews
+//ScrollEffects    //HomeFruits41    //FloatingButtons ///FancyFood  //RestaurantProfile //RentalHome ///HomeFoodReviews

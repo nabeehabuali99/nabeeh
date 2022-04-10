@@ -29,6 +29,13 @@ class Color_Const {
   static Color darkGreen =  Color(0xFF116D51);
   static Color darkBluee=  Color(0xFF2560FA);
   static Color org=   Color(0xFFFE6643);
+  static Color GreenLight=   Color(0xFF89AC83);
+  static Color GreenLight2 =    Color(0xFFAAC2A5);
+  static Color DarkOrange =   Color(0xFFD2691F);
+  static Color GreeeenFruits =   Color(0xFF57874E);
+  static Color GreeeenFruitslight =   Color(0xFF8FC03A);
+  static Color LightBlue =   Color(0xFF21BFBD);
+  static Color property =   Color(0xFF7A9BEE);
 
   static Color red = Colors.red;
   static Color amber = Colors.amber;

@@ -1,3 +1,6 @@
+import 'Colors.dart';
+import 'PathImageConstants.dart';
+
 class AllStringsConstants {
   static const welcomeWordFood = 'Good Afternoon!';
   static const chooseYourFavFood = 'Choose your favorite!';
@@ -72,4 +75,65 @@ class AllStringsConstants {
     {'type': 'Latte with Turmeric', 'info': 'Iced Coffee', 'price': '2.9'},
     {'type': 'Latte with Turmeric', 'info': 'Iced Coffee', 'price': '2.9'}
   ];
+
+  static const nameOfTapBarFoodReviews1 = 'Recipes';
+  static const nameOfTapBarFoodReviews2 = 'Gallery';
+  static const nameOfTapBarFoodReviews3 = 'Story';
+  static const titleOfListFoodReviews = 'Recommended';
+  static const extnsiosOfListFoodReviews = 'SEE ALL';
+  static const titleOfGetCardFoodReviews1 = 'Granola with fruits';
+  static const titleOfTapBarFoodReviews2 = 'Bread with avocado';
+  static const NameOfpersonFoodReviews = 'Elisabeth';
+  static const numberOfFollowersFoodReviews = '1,974 Followers';
+  static const folowWordFoodReviews = 'Follow';
+  static List foodItems41 = [
+    {'image': PathConstants.GreenApple, 'count': '80', 'price': '\$13.88'},
+    {'image': PathConstants.Lemons2, 'count': '75', 'price': '\$15.00'},
+    {'image': PathConstants.orangeF, 'count': '89', 'price': '\$11.86'}
+  ];
+  static List foodItemsInfo42 = [
+    {'cardTitle': 'WEIGHT', 'info': '300', 'unit': 'G'},
+    {'cardTitle': 'CALORIES', 'info': '267', 'unit': 'CAL'},
+    {'cardTitle': 'VITAMINS', 'info': 'A, B6', 'unit': 'VIT'},
+    {'cardTitle': 'AVAIL', 'info': 'NO', 'unit': 'AV'}
+  ];
+  static List foodItems42 = [
+    {
+      'image': PathConstants.plate1,
+      'foodName': 'Salmon bowl',
+      'price': '\$24.00'
+    },
+    {
+      'image': PathConstants.plate2,
+      'foodName': 'Spring bowl',
+      'price': '\$26.00'
+    },
+    {
+      'image': PathConstants.plate6,
+      'foodName': 'Avocado bowl',
+      'price': '\$22.00'
+    },
+    {
+      'image': PathConstants.plate5,
+      'foodName': 'Berry bowl',
+      'price': '\$24.00'
+    }
+  ];
+  static List foodCardItems41 = [
+    {
+      'image': PathConstants.avocado,
+      'price': '\$10.78',
+      'descriptipn': 'Big single avocado fresh imported fruits from the Mexican Avocado collection',
+      'color': Color_Const.GreeeenFruits
+    },
+    {
+      'image': PathConstants.grapes,
+      'price': '\$10.78',
+      'descriptipn': 'Big single avocado fresh imported fruits from the Mexican Avocado collection',
+      'color': Color_Const.GreeeenFruitslight
+    },
+  ];
+  static const addToCartWordFruits41 = 'add To Cart';
+  static const allFruitsWordFruits41 = 'All Fruits';
+  static const SalesWordFruits41 = 'Sales';
 }
